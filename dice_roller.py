@@ -16,4 +16,10 @@ def roll_dice():
     print(f"You rolled a total of {total_roll} from the dice.")
     print(f"After adding modifiers, your final total is {total_with_modifiers}.")
 
-roll_dice()
+while True:
+    roll_dice()
+
+    user_choice = input("Do you want to roll again? Y continue, N to exit: ")
+    if user_choice == "N" or "n":
+            print("Exiting the program.")
+            break
